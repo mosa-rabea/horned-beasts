@@ -9,7 +9,12 @@
   width: auto;
   display: block;
 }
-
+.h  {
+ height: 100px;
+  justify-content:center;
+  text-align: center;
+ color: ivory;
+}
 
 
 .card {
@@ -20,9 +25,9 @@
   display: flex;
   flex-wrap: wrap;
 }
-.beasts-container{
+.cardP{
   display:grid;
-  grid-template-columns: repeat(5,auto);
+  grid-template-columns: repeat(4,auto);
 }
 
 .heart .btn-link {

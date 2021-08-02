@@ -4,22 +4,21 @@ export default class HornedBeasts extends React.Component {
   state = { fanClk: 0 };
 
   render() {
-    const { title, img, description } = this.props;
+    
     return (
       <>
-        <div className='beasts-container'>
+        <div className='cardP'>
           <Card style={{ width: '18rem' }}>
             <Card.Img
+             
+              onClick={() => { this.setState({ fanClk: this.state.fanClk + 1 });}}
+              src={this.props.img}
+              alt={this.props.title}
               variant='top'
-              onClick={() => {
-                this.setState({ fanClk: this.state.fanClk + 1 });
-              }}
-              src={img}
-              alt={title}
             />
             <Card.Body>
-              <Card.Title>{title}</Card.Title>
-              <Card.Text>{description}</Card.Text>
+              <Card.Title>{this.props.title}</Card.Title>
+              <Card.Text>{this.props.description}</Card.Text>
             </Card.Body>
             <Card.Footer>❤️ : {this.state.fanClk}</Card.Footer>
           </Card>

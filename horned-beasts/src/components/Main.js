@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import HornedBeasts from './HornedBeasts';
-import Beasts from './reso/data.json';
+import BeastsArray from './reso/data.json';
 import CardDeck from 'react-bootstrap/CardDeck';
 
 export default class Main extends Component {
@@ -9,12 +9,12 @@ export default class Main extends Component {
       <main>
         <div>
           <CardDeck>
-            {Beasts.map((beast, index) => (
+            {BeastsArray.map((beastItem, index) => (
               <div key={index}>
                 <HornedBeasts
-                  title={beast.title}
-                  img={beast.image_url}
-                  description={beast.description}
+                  title={beastItem.title}
+                  img={beastItem.image_url}
+                  description={beastItem.description}
                   
                 />{' '}
               </div>

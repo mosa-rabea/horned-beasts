@@ -6,8 +6,8 @@ class Header extends React.Component {
   };
   render() {
     return (
-      <header style={{ background: this.state.color }}>
-        <h1>Horned Beasts</h1>
+      <header className="h" style={{ background: this.state.color }}>
+        <h1 >Horned Beasts</h1>
       </header>
     );
   }
