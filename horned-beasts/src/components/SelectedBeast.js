@@ -4,9 +4,9 @@ import  Modal from 'react-bootstrap/Modal';
 
 export default class SelectedBeast extends React.Component {
       render() {
-            const {title,description,imageurl,fClose,show} = this.props;
+            const {title,description,imageurl,handleClose,show} = this.props;
             return (
-                  <Modal show={show} onHide={fClose}>
+                  <Modal show={show} onHide={handleClose}>
                   <Modal.Header closeButton>
                     <Modal.Title>{title}</Modal.Title>
                   </Modal.Header>
